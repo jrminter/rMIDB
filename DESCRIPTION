@@ -1,0 +1,14 @@
+Package: rMIDB
+Title: Provide convenience functions to work with the sqlite3 MIDB database
+Version: 0.0.0.2
+Authors@R: person("John", "Minter", email = "jrminter@gmail.com", role = c("aut", "cre"))
+Description: Provides wrapper functions for common functions to interface with the microscopy information database (MIDB).
+Depends: R (>= 3.4.1)
+Imports:
+    RSQLite
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    knitr
+RoxygenNote: 6.0.1
