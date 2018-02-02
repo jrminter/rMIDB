@@ -7,6 +7,9 @@
 #' @param dbPath path to database, e.g. "M:/sqlite-midb/midb.db"
 #' @param csvOut path for csv, e.g. "../dat/csv/samples.csv"
 #'
+#' @import RSQLite
+#' @import utils
+#'
 #' @export
 #'
 #' @examples
@@ -14,7 +17,7 @@
 getSamplesSQLite3Proj <- function(projID,
                                   dbPath,
                                   csvOut){
-  library(RSQLite)
+
   con <- dbConnect(RSQLite::SQLite(), dbname=dbPath)
   tables <- dbListTables(con)
   query = sprintf("select Lab_ID,Client_Sample_ID,Sample_Info,Date_In,Date_Out from samples where PROJECT_ID = \"%s\" ", projID)

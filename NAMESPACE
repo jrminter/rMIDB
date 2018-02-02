@@ -2,3 +2,5 @@
 
 export(getSamplesSQLite3Job)
 export(getSamplesSQLite3Proj)
+import(RSQLite)
+import(utils)

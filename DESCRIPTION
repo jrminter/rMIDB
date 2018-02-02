@@ -6,7 +6,7 @@ Description: Provides wrapper functions for common functions to interface with t
 Depends: R (>= 3.4.1)
 Imports:
     RSQLite
-License: GPL (>=2)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests:
